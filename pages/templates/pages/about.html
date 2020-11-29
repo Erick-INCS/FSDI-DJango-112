@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About me</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                background-image: url('https://images.pexels.com/photos/5674936/pexels-photo-5674936.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+            }
+
+            h1 {
+                font-size: 3rem;
+                background: rgba(0, 0, 0, 0.3);
+                margin: 0;
+                padding: 1rem;
+            }
+
+            img {
+                width: 33vw;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Erick Arroyo</h1>
+        <img src="{% static 'pages/img.jpg' %}" alt="Me">
+        <p>Hello! My name is Erick, ...</p>
+    </body>
+</html>
