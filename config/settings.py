@@ -123,3 +123,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     str(BASE_DIR.joinpath('pages/static'))
 ]
+
+STATIC_ROOT = 'static/'
