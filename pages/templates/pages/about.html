@@ -1,35 +1,29 @@
+{% extends 'pages/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About me</title>
-        <style>
-            body {
-                padding: 0;
-                margin: 0;
-                background-image: url('https://images.pexels.com/photos/5674936/pexels-photo-5674936.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: white;
-            }
+{% block content %}
 
-            h1 {
-                font-size: 3rem;
-                background: rgba(0, 0, 0, 0.3);
-                margin: 0;
-                padding: 1rem;
-            }
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
 
-            img {
-                width: 33vw;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Erick Arroyo</h1>
-        <img src="{% static 'pages/img.jpg' %}" alt="Me">
-        <p>Hello! My name is Erick, ...</p>
-    </body>
-</html>
+<section class="me">
+    <div class="img">
+        <img src="{% static 'img/selfie2_box.jpg' %}" class="me" alt="Me">
+    </div>
+
+    <div class="text-center">
+        <h1>Hi, I am Erick, nice to meet you!</h1>
+        <p>
+            I am Junior software developer and a Artificial Inteligence enthusiast. <br>
+        </p>
+
+        <p class="div">
+            With a slightly mathematical approach I seek to provide efficient, original and abstract solutions to situations where computers can of help.
+        </p>
+
+        <p class="interests">Interests: Full Stack Development / Data Science / Artificial Inteligence / Software Development </p>
+    </div>
+
+</section>
+
+{% endblock content %}

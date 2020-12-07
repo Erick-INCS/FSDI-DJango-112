@@ -1,8 +1,35 @@
-{% block content %}
-    <header>
-        <a href="{% url 'home' %}">Home</a>
-        |
-        <a href="{% url 'about' %}">About</a>
-    </header>
-    .........
-{% endblock content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About me</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+        
+      <div id="p" class="magic">.</div>
+        <header>
+
+            <div class="left">
+                <h3>Erick Arroyo</h3>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}">About</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        {% block content %}
+        {% endblock content %}
+
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
